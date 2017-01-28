@@ -11,6 +11,24 @@
 		9CFB23E51E3C3E720033EC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB23E41E3C3E720033EC43 /* AppDelegate.swift */; };
 		9CFB23EC1E3C3E720033EC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFB23EB1E3C3E720033EC43 /* Assets.xcassets */; };
 		9CFB23EF1E3C3E720033EC43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFB23ED1E3C3E720033EC43 /* LaunchScreen.storyboard */; };
+		9CFB24061E3C45790033EC43 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB24051E3C45790033EC43 /* Adapter.swift */; };
+		9CFB24081E3C45B50033EC43 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB24071E3C45B50033EC43 /* Result.swift */; };
+		9CFB240A1E3C46000033EC43 /* RealmObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB24091E3C46000033EC43 /* RealmObserver.swift */; };
+		9CFB240C1E3C462E0033EC43 /* RxRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB240B1E3C462E0033EC43 /* RxRealm.swift */; };
+		9CFB240E1E3C46890033EC43 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB240D1E3C46890033EC43 /* MaterialView.swift */; };
+		9CFB24101E3C46C00033EC43 /* ContactApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB240F1E3C46C00033EC43 /* ContactApi.swift */; };
+		9CFB24121E3C47240033EC43 /* ContactApiErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB24111E3C47240033EC43 /* ContactApiErrorHandler.swift */; };
+		9CFB24141E3C479F0033EC43 /* SearchContactAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB24131E3C479F0033EC43 /* SearchContactAdapter.swift */; };
+		9CFB24161E3C48200033EC43 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB24151E3C48200033EC43 /* Contact.swift */; };
+		9CFB24181E3C48C20033EC43 /* ContactAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB24171E3C48C20033EC43 /* ContactAdapter.swift */; };
+		9CFB241C1E3C4CC70033EC43 /* RealmContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB241B1E3C4CC70033EC43 /* RealmContact.swift */; };
+		9CFB241E1E3C4DC50033EC43 /* StorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB241D1E3C4DC50033EC43 /* StorageController.swift */; };
+		9CFB24201E3C4EA70033EC43 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB241F1E3C4EA70033EC43 /* Storage.swift */; };
+		9CFB24221E3C4EDF0033EC43 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB24211E3C4EDF0033EC43 /* ApiClient.swift */; };
+		9CFB24241E3C4F2D0033EC43 /* ContactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB24231E3C4F2D0033EC43 /* ContactClient.swift */; };
+		9CFB24261E3C4F990033EC43 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB24251E3C4F990033EC43 /* DataProvider.swift */; };
+		9CFB24281E3C508D0033EC43 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB24271E3C508D0033EC43 /* ContactViewModel.swift */; };
+		9CFB242A1E3C52C90033EC43 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB24291E3C52C90033EC43 /* SearchResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +39,24 @@
 		9CFB23EB1E3C3E720033EC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		9CFB23EE1E3C3E720033EC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CFB23F01E3C3E720033EC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		9CFB24051E3C45790033EC43 /* Adapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		9CFB24071E3C45B50033EC43 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		9CFB24091E3C46000033EC43 /* RealmObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmObserver.swift; sourceTree = "<group>"; };
+		9CFB240B1E3C462E0033EC43 /* RxRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxRealm.swift; sourceTree = "<group>"; };
+		9CFB240D1E3C46890033EC43 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		9CFB240F1E3C46C00033EC43 /* ContactApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactApi.swift; sourceTree = "<group>"; };
+		9CFB24111E3C47240033EC43 /* ContactApiErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactApiErrorHandler.swift; sourceTree = "<group>"; };
+		9CFB24131E3C479F0033EC43 /* SearchContactAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchContactAdapter.swift; sourceTree = "<group>"; };
+		9CFB24151E3C48200033EC43 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		9CFB24171E3C48C20033EC43 /* ContactAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactAdapter.swift; sourceTree = "<group>"; };
+		9CFB241B1E3C4CC70033EC43 /* RealmContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmContact.swift; sourceTree = "<group>"; };
+		9CFB241D1E3C4DC50033EC43 /* StorageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageController.swift; sourceTree = "<group>"; };
+		9CFB241F1E3C4EA70033EC43 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		9CFB24211E3C4EDF0033EC43 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		9CFB24231E3C4F2D0033EC43 /* ContactClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactClient.swift; sourceTree = "<group>"; };
+		9CFB24251E3C4F990033EC43 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		9CFB24271E3C508D0033EC43 /* ContactViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		9CFB24291E3C52C90033EC43 /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		9F2E5C587BAEBB1456C14205 /* Pods_RgaContactsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RgaContactsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +151,9 @@
 		9CFB23FA1E3C3F890033EC43 /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
+				9CFB24051E3C45790033EC43 /* Adapter.swift */,
+				9CFB24131E3C479F0033EC43 /* SearchContactAdapter.swift */,
+				9CFB24171E3C48C20033EC43 /* ContactAdapter.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -123,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				9CFB23FC1E3C3F890033EC43 /* Protocols */,
+				9CFB24251E3C4F990033EC43 /* DataProvider.swift */,
 			);
 			path = DataProvider;
 			sourceTree = "<group>";
@@ -130,6 +170,8 @@
 		9CFB23FC1E3C3F890033EC43 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				9CFB241F1E3C4EA70033EC43 /* Storage.swift */,
+				9CFB24211E3C4EDF0033EC43 /* ApiClient.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -137,6 +179,9 @@
 		9CFB23FD1E3C3F890033EC43 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9CFB24071E3C45B50033EC43 /* Result.swift */,
+				9CFB24151E3C48200033EC43 /* Contact.swift */,
+				9CFB24291E3C52C90033EC43 /* SearchResults.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,6 +189,9 @@
 		9CFB23FE1E3C3F890033EC43 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				9CFB240F1E3C46C00033EC43 /* ContactApi.swift */,
+				9CFB24111E3C47240033EC43 /* ContactApiErrorHandler.swift */,
+				9CFB24231E3C4F2D0033EC43 /* ContactClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -151,6 +199,8 @@
 		9CFB23FF1E3C3F890033EC43 /* Realm+Rx */ = {
 			isa = PBXGroup;
 			children = (
+				9CFB24091E3C46000033EC43 /* RealmObserver.swift */,
+				9CFB240B1E3C462E0033EC43 /* RxRealm.swift */,
 			);
 			path = "Realm+Rx";
 			sourceTree = "<group>";
@@ -159,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				9CFB24011E3C3F890033EC43 /* RealmObjects */,
+				9CFB241D1E3C4DC50033EC43 /* StorageController.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -166,6 +217,7 @@
 		9CFB24011E3C3F890033EC43 /* RealmObjects */ = {
 			isa = PBXGroup;
 			children = (
+				9CFB241B1E3C4CC70033EC43 /* RealmContact.swift */,
 			);
 			path = RealmObjects;
 			sourceTree = "<group>";
@@ -183,6 +235,7 @@
 		9CFB24031E3C3F890033EC43 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9CFB24271E3C508D0033EC43 /* ContactViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -190,6 +243,7 @@
 		9CFB24041E3C3F890033EC43 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9CFB240D1E3C46890033EC43 /* MaterialView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -325,7 +379,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFB24081E3C45B50033EC43 /* Result.swift in Sources */,
+				9CFB24201E3C4EA70033EC43 /* Storage.swift in Sources */,
+				9CFB24141E3C479F0033EC43 /* SearchContactAdapter.swift in Sources */,
+				9CFB24161E3C48200033EC43 /* Contact.swift in Sources */,
+				9CFB241E1E3C4DC50033EC43 /* StorageController.swift in Sources */,
 				9CFB23E51E3C3E720033EC43 /* AppDelegate.swift in Sources */,
+				9CFB24061E3C45790033EC43 /* Adapter.swift in Sources */,
+				9CFB24281E3C508D0033EC43 /* ContactViewModel.swift in Sources */,
+				9CFB24181E3C48C20033EC43 /* ContactAdapter.swift in Sources */,
+				9CFB240E1E3C46890033EC43 /* MaterialView.swift in Sources */,
+				9CFB24241E3C4F2D0033EC43 /* ContactClient.swift in Sources */,
+				9CFB240A1E3C46000033EC43 /* RealmObserver.swift in Sources */,
+				9CFB242A1E3C52C90033EC43 /* SearchResults.swift in Sources */,
+				9CFB240C1E3C462E0033EC43 /* RxRealm.swift in Sources */,
+				9CFB24121E3C47240033EC43 /* ContactApiErrorHandler.swift in Sources */,
+				9CFB24261E3C4F990033EC43 /* DataProvider.swift in Sources */,
+				9CFB241C1E3C4CC70033EC43 /* RealmContact.swift in Sources */,
+				9CFB24101E3C46C00033EC43 /* ContactApi.swift in Sources */,
+				9CFB24221E3C4EDF0033EC43 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +554,7 @@
 				9CFB23F51E3C3E720033EC43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
