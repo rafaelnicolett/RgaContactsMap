@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20660F5FC4460E9D4E471B58 /* Pods_RgaContactsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2E5C587BAEBB1456C14205 /* Pods_RgaContactsApp.framework */; };
 		9CFB23E51E3C3E720033EC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB23E41E3C3E720033EC43 /* AppDelegate.swift */; };
-		9CFB23E71E3C3E720033EC43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB23E61E3C3E720033EC43 /* ViewController.swift */; };
-		9CFB23EA1E3C3E720033EC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFB23E81E3C3E720033EC43 /* Main.storyboard */; };
 		9CFB23EC1E3C3E720033EC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFB23EB1E3C3E720033EC43 /* Assets.xcassets */; };
 		9CFB23EF1E3C3E720033EC43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFB23ED1E3C3E720033EC43 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3303DE18A93F736FC2813040 /* Pods-RgaContactsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RgaContactsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RgaContactsApp/Pods-RgaContactsApp.release.xcconfig"; sourceTree = "<group>"; };
+		4601AA237216881C45D8DE0D /* Pods-RgaContactsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RgaContactsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RgaContactsApp/Pods-RgaContactsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9CFB23E11E3C3E720033EC43 /* RgaContactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RgaContactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CFB23E41E3C3E720033EC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CFB23E61E3C3E720033EC43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9CFB23E91E3C3E720033EC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9CFB23EB1E3C3E720033EC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CFB23E41E3C3E720033EC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		9CFB23EB1E3C3E720033EC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		9CFB23EE1E3C3E720033EC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9CFB23F01E3C3E720033EC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CFB23F01E3C3E720033EC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		9F2E5C587BAEBB1456C14205 /* Pods_RgaContactsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RgaContactsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +29,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20660F5FC4460E9D4E471B58 /* Pods_RgaContactsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E3B3A10EC3DCFB78B46A8CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4601AA237216881C45D8DE0D /* Pods-RgaContactsApp.debug.xcconfig */,
+				3303DE18A93F736FC2813040 /* Pods-RgaContactsApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9CFB23D81E3C3E720033EC43 = {
 			isa = PBXGroup;
 			children = (
 				9CFB23E31E3C3E720033EC43 /* RgaContactsApp */,
 				9CFB23E21E3C3E720033EC43 /* Products */,
+				8E3B3A10EC3DCFB78B46A8CB /* Pods */,
+				A634730459855F8FBE325206 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +66,140 @@
 		9CFB23E31E3C3E720033EC43 /* RgaContactsApp */ = {
 			isa = PBXGroup;
 			children = (
+				9CFB23F61E3C3F890033EC43 /* Appearance */,
+				9CFB23F71E3C3F890033EC43 /* Bootstrap */,
+				9CFB23F81E3C3F890033EC43 /* Controllers */,
+				9CFB23F91E3C3F890033EC43 /* Core */,
+				9CFB24021E3C3F890033EC43 /* Resources */,
+				9CFB24031E3C3F890033EC43 /* ViewModel */,
+				9CFB24041E3C3F890033EC43 /* Views */,
+			);
+			path = RgaContactsApp;
+			sourceTree = "<group>";
+		};
+		9CFB23F61E3C3F890033EC43 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		9CFB23F71E3C3F890033EC43 /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
 				9CFB23E41E3C3E720033EC43 /* AppDelegate.swift */,
-				9CFB23E61E3C3E720033EC43 /* ViewController.swift */,
-				9CFB23E81E3C3E720033EC43 /* Main.storyboard */,
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		9CFB23F81E3C3F890033EC43 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9CFB23F91E3C3F890033EC43 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9CFB23FA1E3C3F890033EC43 /* Adapters */,
+				9CFB23FB1E3C3F890033EC43 /* DataProvider */,
+				9CFB23FD1E3C3F890033EC43 /* Models */,
+				9CFB23FE1E3C3F890033EC43 /* Networking */,
+				9CFB23FF1E3C3F890033EC43 /* Realm+Rx */,
+				9CFB24001E3C3F890033EC43 /* Storage */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9CFB23FA1E3C3F890033EC43 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		9CFB23FB1E3C3F890033EC43 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				9CFB23FC1E3C3F890033EC43 /* Protocols */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		9CFB23FC1E3C3F890033EC43 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9CFB23FD1E3C3F890033EC43 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9CFB23FE1E3C3F890033EC43 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9CFB23FF1E3C3F890033EC43 /* Realm+Rx */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Realm+Rx";
+			sourceTree = "<group>";
+		};
+		9CFB24001E3C3F890033EC43 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				9CFB24011E3C3F890033EC43 /* RealmObjects */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		9CFB24011E3C3F890033EC43 /* RealmObjects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RealmObjects;
+			sourceTree = "<group>";
+		};
+		9CFB24021E3C3F890033EC43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				9CFB23EB1E3C3E720033EC43 /* Assets.xcassets */,
 				9CFB23ED1E3C3E720033EC43 /* LaunchScreen.storyboard */,
 				9CFB23F01E3C3E720033EC43 /* Info.plist */,
 			);
-			path = RgaContactsApp;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9CFB24031E3C3F890033EC43 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9CFB24041E3C3F890033EC43 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A634730459855F8FBE325206 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F2E5C587BAEBB1456C14205 /* Pods_RgaContactsApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CFB23F31E3C3E720033EC43 /* Build configuration list for PBXNativeTarget "RgaContactsApp" */;
 			buildPhases = (
+				43E985852F97846627AEA2C6 /* [CP] Check Pods Manifest.lock */,
 				9CFB23DD1E3C3E720033EC43 /* Sources */,
 				9CFB23DE1E3C3E720033EC43 /* Frameworks */,
 				9CFB23DF1E3C3E720033EC43 /* Resources */,
+				641969238B8C43DAA05DDA55 /* [CP] Embed Pods Frameworks */,
+				1BB19C9A8164189112B0B67C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,18 +267,64 @@
 			files = (
 				9CFB23EF1E3C3E720033EC43 /* LaunchScreen.storyboard in Resources */,
 				9CFB23EC1E3C3E720033EC43 /* Assets.xcassets in Resources */,
-				9CFB23EA1E3C3E720033EC43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BB19C9A8164189112B0B67C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RgaContactsApp/Pods-RgaContactsApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43E985852F97846627AEA2C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		641969238B8C43DAA05DDA55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RgaContactsApp/Pods-RgaContactsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CFB23DD1E3C3E720033EC43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CFB23E71E3C3E720033EC43 /* ViewController.swift in Sources */,
 				9CFB23E51E3C3E720033EC43 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,20 +332,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9CFB23E81E3C3E720033EC43 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9CFB23E91E3C3E720033EC43 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9CFB23ED1E3C3E720033EC43 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9CFB23EE1E3C3E720033EC43 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -257,6 +437,7 @@
 		};
 		9CFB23F41E3C3E720033EC43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4601AA237216881C45D8DE0D /* Pods-RgaContactsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 89J6DNEM9C;
@@ -270,6 +451,7 @@
 		};
 		9CFB23F51E3C3E720033EC43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3303DE18A93F736FC2813040 /* Pods-RgaContactsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 89J6DNEM9C;
