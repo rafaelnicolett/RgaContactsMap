@@ -46,7 +46,8 @@ class ContactsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(ContactTableViewCell.self, forCellReuseIdentifier: Constants.cellIdentifier)
+        tableView.register(UINib.init(nibName: "ContactTableViewCell", bundle: nil), forCellReuseIdentifier: Constants.cellIdentifier)
+        tableView.rowHeight = 100
         
         let loadContacts = tableView.rx.contentOffset.debounce(0.3, scheduler: MainScheduler.instance)
             .flatMap { (point) -> Observable<[Contact]> in
@@ -74,7 +75,7 @@ class ContactsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier, for: indexPath) as! ContactTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier) as! ContactTableViewCell
         
         cell.viewModel = contactViewModels[indexPath.row]
         

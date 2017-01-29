@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		20660F5FC4460E9D4E471B58 /* Pods_RgaContactsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2E5C587BAEBB1456C14205 /* Pods_RgaContactsApp.framework */; };
+		9C3874AA1E3E86FA00AF906B /* ModalContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3874A91E3E86FA00AF906B /* ModalContainerViewController.swift */; };
+		9C3874AD1E3E983800AF906B /* DetailContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3874AB1E3E983800AF906B /* DetailContactViewController.swift */; };
+		9C3874AE1E3E983800AF906B /* DetailContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C3874AC1E3E983800AF906B /* DetailContactViewController.xib */; };
 		9C5024BC1E3D862F00D338A1 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5024BB1E3D862F00D338A1 /* ContactsTableViewController.swift */; };
 		9C5024BE1E3D864400D338A1 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5024BD1E3D864400D338A1 /* ContactTableViewCell.swift */; };
 		9C5024C21E3D868300D338A1 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C5024C11E3D868300D338A1 /* ContactTableViewCell.xib */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		3303DE18A93F736FC2813040 /* Pods-RgaContactsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RgaContactsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RgaContactsApp/Pods-RgaContactsApp.release.xcconfig"; sourceTree = "<group>"; };
 		4601AA237216881C45D8DE0D /* Pods-RgaContactsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RgaContactsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RgaContactsApp/Pods-RgaContactsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9C3874A91E3E86FA00AF906B /* ModalContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalContainerViewController.swift; sourceTree = "<group>"; };
+		9C3874AB1E3E983800AF906B /* DetailContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailContactViewController.swift; sourceTree = "<group>"; };
+		9C3874AC1E3E983800AF906B /* DetailContactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailContactViewController.xib; sourceTree = "<group>"; };
 		9C5024BB1E3D862F00D338A1 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		9C5024BD1E3D864400D338A1 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		9C5024C11E3D868300D338A1 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
@@ -146,6 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				9C5024BB1E3D862F00D338A1 /* ContactsTableViewController.swift */,
+				9C3874A91E3E86FA00AF906B /* ModalContainerViewController.swift */,
+				9C3874AB1E3E983800AF906B /* DetailContactViewController.swift */,
+				9C3874AC1E3E983800AF906B /* DetailContactViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -338,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C5024C21E3D868300D338A1 /* ContactTableViewCell.xib in Resources */,
+				9C3874AE1E3E983800AF906B /* DetailContactViewController.xib in Resources */,
 				9CFB23EF1E3C3E720033EC43 /* LaunchScreen.storyboard in Resources */,
 				9CFB23EC1E3C3E720033EC43 /* Assets.xcassets in Resources */,
 			);
@@ -399,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CFB24081E3C45B50033EC43 /* Result.swift in Sources */,
+				9C3874AD1E3E983800AF906B /* DetailContactViewController.swift in Sources */,
 				9CFB24201E3C4EA70033EC43 /* Storage.swift in Sources */,
 				9C5024BE1E3D864400D338A1 /* ContactTableViewCell.swift in Sources */,
 				9CFB24141E3C479F0033EC43 /* SearchContactAdapter.swift in Sources */,
@@ -412,6 +423,7 @@
 				9CFB24241E3C4F2D0033EC43 /* ContactClient.swift in Sources */,
 				9CFB240A1E3C46000033EC43 /* RealmObserver.swift in Sources */,
 				9CFB242A1E3C52C90033EC43 /* SearchResults.swift in Sources */,
+				9C3874AA1E3E86FA00AF906B /* ModalContainerViewController.swift in Sources */,
 				9CFB240C1E3C462E0033EC43 /* RxRealm.swift in Sources */,
 				9C5024C41E3D8AC900D338A1 /* UITableView+Diff.swift in Sources */,
 				9CFB24121E3C47240033EC43 /* ContactApiErrorHandler.swift in Sources */,

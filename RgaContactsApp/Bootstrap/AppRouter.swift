@@ -37,8 +37,15 @@ final class AppRouter {
         navigationController.viewControllers = [controller]
     }
     
-    func showCharacterDetailViewController(for contact: Contact, from presentingViewController: UIViewController? = nil) {
-       
+    func showContactDetailViewController(for contact: Contact, from presentingViewController: UIViewController? = nil) {
+        let controller = DetailContactViewController(provider: self.provider, contact: contact)
+        
+        if let presentingViewController = presentingViewController {
+            let modalContainer = ModalContainerViewController(rootViewController: controller)
+            presentingViewController.present(modalContainer, animated: true, completion: nil)
+        } else {
+            navigationController.pushViewController(controller, animated: true)
+        }
     }
 }
 
@@ -46,7 +53,7 @@ extension AppRouter : ContactsTableViewControllerDelegate {
     
     func contactsTableViewController(_ controller: ContactsTableViewController, didSelect contact: Contact) {
         if controller is ContactsTableViewController {
-            showCharacterDetailViewController(for: contact)
+            showContactDetailViewController(for: contact)
         }
     }
 }
