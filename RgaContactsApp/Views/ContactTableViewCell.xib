@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellContact" rowHeight="100" id="a9q-PM-BA0" customClass="ContactTableViewCell" customModule="RgaContactsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a9q-PM-BA0" id="DMX-4l-qpL">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5q-Hq-dgE">
+                        <rect key="frame" x="8" y="8" width="359" height="84"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xc2-Ia-z3L">
+                                <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
+                                <color key="backgroundColor" red="0.90611000539999997" green="0.90611000539999997" blue="0.90611000539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="E5U-yD-4ta"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiI-vr-7gy">
+                                <rect key="frame" x="92" y="8" width="259" height="28"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3t-pV-38I">
+                                <rect key="frame" x="92" y="44" width="259" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eiI-vr-7gy" firstAttribute="leading" secondItem="Xc2-Ia-z3L" secondAttribute="trailing" constant="8" id="3bB-My-oKf"/>
+                            <constraint firstAttribute="bottom" secondItem="Xc2-Ia-z3L" secondAttribute="bottom" id="4p5-iH-C8k"/>
+                            <constraint firstItem="Xc2-Ia-z3L" firstAttribute="top" secondItem="u5q-Hq-dgE" secondAttribute="top" id="WPq-Bm-dVi"/>
+                            <constraint firstAttribute="trailing" secondItem="eiI-vr-7gy" secondAttribute="trailing" constant="8" id="c6M-B2-2Wk"/>
+                            <constraint firstItem="v3t-pV-38I" firstAttribute="top" secondItem="eiI-vr-7gy" secondAttribute="bottom" constant="8" id="cws-ch-OxK"/>
+                            <constraint firstAttribute="trailing" secondItem="v3t-pV-38I" secondAttribute="trailing" constant="8" id="dqT-Dj-7R7"/>
+                            <constraint firstItem="v3t-pV-38I" firstAttribute="leading" secondItem="Xc2-Ia-z3L" secondAttribute="trailing" constant="8" id="fKZ-Y5-723"/>
+                            <constraint firstItem="eiI-vr-7gy" firstAttribute="top" secondItem="u5q-Hq-dgE" secondAttribute="top" constant="8" id="pwf-Qw-Lyj"/>
+                            <constraint firstItem="Xc2-Ia-z3L" firstAttribute="leading" secondItem="u5q-Hq-dgE" secondAttribute="leading" id="qcH-TQ-Jj8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="u5q-Hq-dgE" secondAttribute="trailing" constant="8" id="7CL-sW-hui"/>
+                    <constraint firstAttribute="bottom" secondItem="u5q-Hq-dgE" secondAttribute="bottom" constant="8" id="OPP-Pe-MeS"/>
+                    <constraint firstItem="u5q-Hq-dgE" firstAttribute="centerX" secondItem="DMX-4l-qpL" secondAttribute="centerX" id="Ocz-8k-IV6"/>
+                    <constraint firstItem="u5q-Hq-dgE" firstAttribute="leading" secondItem="DMX-4l-qpL" secondAttribute="leading" constant="8" id="ZPQ-1D-v2Y"/>
+                    <constraint firstItem="u5q-Hq-dgE" firstAttribute="top" secondItem="DMX-4l-qpL" secondAttribute="top" constant="8" id="eEW-Sx-Mks"/>
+                    <constraint firstItem="u5q-Hq-dgE" firstAttribute="centerY" secondItem="DMX-4l-qpL" secondAttribute="centerY" id="l4U-cM-xmA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblEmailContact" destination="v3t-pV-38I" id="56R-Jk-7tG"/>
+                <outlet property="lblNameContact" destination="eiI-vr-7gy" id="wXH-EK-o4W"/>
+                <outlet property="viewPhotoContact" destination="Xc2-Ia-z3L" id="wEO-kN-4lf"/>
+            </connections>
+            <point key="canvasLocation" x="-139.5" y="1369"/>
+        </tableViewCell>
+    </objects>
+</document>

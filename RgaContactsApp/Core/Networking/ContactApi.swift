@@ -13,16 +13,16 @@ import SwiftyJSON
 final class ContactApi {
     
     private struct Endpoints {
-        static let contacts = "v1/content.json"
+        static let contacts = "/content.json"
     }
     
-    private let service = Service(baseURL: "http://rgasp-mobile-test.s3-website-sa-east-1.amazonaws.com/")
+    private let service = Service(baseURL: "http://rgasp-mobile-test.s3-website-sa-east-1.amazonaws.com/v1/")
     
     init() {
         service.configure("**") { config in
             //config.useNetworkActivityIndicator()
             
-            config.pipeline[.parsing].add(self.jsonParser, contentTypes: ["*/json"])
+            config.pipeline[.parsing].add(self.jsonParser, contentTypes: ["*/json", "*/*+json", "text/*"])
             
             config.pipeline[.cleanup].add(ContactApiErrorErrorHandler())
         }
@@ -33,8 +33,7 @@ final class ContactApi {
     }
     
     func getContacts() -> Resource {
-        return service
-            .resource(Endpoints.contacts)
+        return service.resource(Endpoints.contacts)
     }
     
     private let jsonParser = ResponseContentTransformer { JSON($0.content as AnyObject) }

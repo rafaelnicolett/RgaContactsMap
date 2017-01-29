@@ -12,11 +12,15 @@ import SwiftyJSON
 final class SearchContactAdapter: Adapter<JSON, SearchResults<Contact>> {
     
     override func adapt() -> Result<SearchResults<Contact>, AdapterError> {
-        guard let itemArray = input.array else {
+        guard let jsonStringAsArray = input.rawString() else {
             return .error(.missingRequiredFields)
         }
         
-        let items: [Contact] = itemArray.flatMap { jsonContact-> Contact? in
+        guard let json = JSON.parse(jsonStringAsArray).array else {
+            return .error(.missingRequiredFields)
+        }
+        
+        let items: [Contact] = json.flatMap { jsonContact -> Contact? in
             let result = ContactAdapter(input: jsonContact).adapt()
             switch result {
             case .error(_): return nil
