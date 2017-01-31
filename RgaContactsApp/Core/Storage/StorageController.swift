@@ -29,7 +29,7 @@ final class StorageController: Storage {
             let realmContact = contacts.map(RealmContact.init)
             do {
                 try self.insertOrUpdate(objects: realmContact) { oldContact, newContact in
-                    return oldContact.name == nil && newContact.name != nil
+                    return oldContact.id == nil && newContact.id != nil
                 }
                 
                 completion?(nil)
@@ -40,10 +40,34 @@ final class StorageController: Storage {
     }
     
     func getContacts() -> Observable<[Contact]> {
-        let contacts = self.realm().objects(RealmContact.self)
+        let contacts = self.realm().objects(RealmContact.self).sorted(byProperty: "id")
         
         return Observable.from(contacts).map { realmContacts in
             return realmContacts.map({ $0.contact })
+        }
+    }
+    
+    func saveContact(contact: Contact) {
+        let realmContact = RealmContact(contact: contact)
+        do {
+            try self.insertOrUpdate(object: realmContact) { oldContact, newContact in
+                return newContact.id != nil
+            }
+        } catch {
+
+        }
+    }
+    
+    func deleteContact(contact: Contact) {
+        let realmContact = RealmContact(contact: contact)
+        do {
+            if let existingObject = self.realm().object(ofType: RealmContact.self, forPrimaryKey: realmContact.id) {
+                    try self.realm().write {
+                        self.realm().delete(existingObject)
+                }
+            }
+        } catch {
+            
         }
     }
     
@@ -86,9 +110,17 @@ final class StorageController: Storage {
             }
         } else {
             try realm.write {
+                createUnique(object: object)
                 realm.add(object)
             }
         }
+    }
+    
+    func createUnique<T: Object>(object: T) {
+        var myvalue = realm().objects(T.self).max(ofProperty: "id") ?? 0
+        myvalue = myvalue + 1
+        object.setValue(myvalue, forKey: "id")
+        
     }
 }
 

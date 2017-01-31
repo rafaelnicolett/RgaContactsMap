@@ -18,4 +18,6 @@ protocol Storage: class {
     
     func store(contacts: [Contact], completion: ((StorageError?) -> ())?)
     func getContacts() -> Observable<[Contact]>
+    func saveContact(contact: Contact)
+    func deleteContact(contact: Contact)
 }

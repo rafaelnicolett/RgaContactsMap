@@ -14,6 +14,10 @@ final class ContactViewModel : NSObject, IGListDiffable {
     
     private weak var dataProvider: DataProvider?
     
+    var id: Int {
+        return self.contact.id
+    }
+    
     var name: String {
         return self.contact.name
     }

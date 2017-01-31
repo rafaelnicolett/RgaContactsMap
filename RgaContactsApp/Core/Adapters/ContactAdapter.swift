@@ -32,6 +32,7 @@ final class ContactAdapter: Adapter<JSON, Contact> {
         let photo = input[Contact.Keys.photo].stringValue.replacingOccurrences(of: Contact.Keys.oldUrl, with: Contact.Keys.newUrl)
         
         let contact = Contact(
+            id: 0,
             name: name,
             email: email,
             born: born,

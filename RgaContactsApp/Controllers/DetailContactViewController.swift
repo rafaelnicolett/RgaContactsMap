@@ -21,12 +21,14 @@ class DetailContactViewController: UIViewController {
     
     var contact: Contact {
         didSet {
+            
             guard contact != oldValue else { return }
             
-            update(with: contact)
+            if contact.id != 0 {
+                update(with: contact)
+            }
         }
     }
-    
     
     init(provider: DataProvider, contact: Contact) {
         self.provider = provider
@@ -80,5 +82,37 @@ class DetailContactViewController: UIViewController {
         maskLayer.path = path.cgPath
         
         return maskLayer
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let saveItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(DetailContactViewController.saveContact))
+        
+        let deleteItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(DetailContactViewController.deleteContact))
+        
+        self.navigationController?.topViewController?.navigationItem.rightBarButtonItems = [saveItem, deleteItem]
+    }
+    
+    func saveContact() {
+        if let name = txtNameContact.text {
+            contact.name = name
+        }
+        
+        if let email = txtEmailContact.text {
+            contact.email = email
+        }
+        
+        if let bio = txtvBioContact.text {
+            contact.bio = bio
+        }
+
+        provider.saveContact(contact: contact)
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
+    func deleteContact() {
+        provider.deleteContact(contact: contact)
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }

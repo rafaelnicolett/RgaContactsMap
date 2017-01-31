@@ -47,6 +47,12 @@ final class AppRouter {
             navigationController.pushViewController(controller, animated: true)
         }
     }
+    
+    func showNewContactDetailViewController() {
+        let contactFactory = ContactFactory()
+        let controller = DetailContactViewController(provider: self.provider, contact: contactFactory.createNewContact())
+        navigationController.pushViewController(controller, animated: true)
+    }
 }
 
 extension AppRouter : ContactsTableViewControllerDelegate {
@@ -54,6 +60,12 @@ extension AppRouter : ContactsTableViewControllerDelegate {
     func contactsTableViewController(_ controller: ContactsTableViewController, didSelect contact: Contact) {
         if controller is ContactsTableViewController {
             showContactDetailViewController(for: contact)
+        }
+    }
+    
+    func newContact(_ controller: ContactsTableViewController) {
+        if controller is ContactsTableViewController {
+            showNewContactDetailViewController()
         }
     }
 }

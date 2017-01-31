@@ -10,6 +10,7 @@ import Foundation
 import RealmSwift
 
 final class RealmContact: Object {
+    dynamic var id = 0
     dynamic var name = ""
     dynamic var email = ""
     dynamic var born = ""
@@ -21,7 +22,7 @@ final class RealmContact: Object {
     }
     
     override static func primaryKey() -> String? {
-        return "email"
+        return "id"
     }
 }
 
@@ -30,6 +31,7 @@ extension RealmContact {
     convenience init(contact: Contact) {
         self.init()
         
+        self.id = contact.id
         self.email = contact.email
         self.name = contact.name
         self.born = contact.born
@@ -39,6 +41,7 @@ extension RealmContact {
     
     var contact: Contact {
         return Contact(
+            id: id,
             name: name,
             email: email,
             born: born,

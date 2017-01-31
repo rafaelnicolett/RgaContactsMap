@@ -22,16 +22,29 @@ final class DataProvider {
     var error = Variable<Error?>(nil)
     
     func getContacts() -> Observable<[Contact]> {
-        client.getContacts() { [weak self] result in
-            switch result {
-            case .success(let results):
-                self?.storage.store(contacts: results.items, completion: nil)
-            case .error(let error):
-                self?.error.value = error
+        if (UserDefaults.standard.value(forKey: "firt_access") == nil) {
+            client.getContacts() { [weak self] result in
+                switch result {
+                case .success(let results):
+                    UserDefaults.standard.setValue(true, forKey: "firt_access")
+                    self?.storage.store(contacts: results.items, completion: nil)
+                case .error(let error):
+                    self?.error.value = error
+                }
             }
+            
+            
         }
         
-        return storage.getContacts()
+       return storage.getContacts()
+    }
+    
+    func saveContact(contact: Contact) {
+        storage.saveContact(contact: contact)
+    }
+    
+    func deleteContact(contact: Contact) {
+        storage.deleteContact(contact: contact)
     }
 }
 

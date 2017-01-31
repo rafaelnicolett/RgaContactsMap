@@ -13,8 +13,11 @@ class ModalContainerViewController: UINavigationController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done(_:)))
+        let doneItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(done(_:)))
         topViewController?.navigationItem.rightBarButtonItem = doneItem
+        
+        let deleteItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(done(_:)))
+        topViewController?.navigationItem.rightBarButtonItem = deleteItem
     }
     
     @objc private func done(_ sender: Any?) {
