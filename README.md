@@ -13,7 +13,7 @@ Utilizado Pods para gerenciamento das Libs.
 * IGListKit -> utilizado para fazer um compare nos objetos e tomar suas ações na TableView na func de Reload com base na ViewModel;
 
 
-### Geração do App ###
+### Criação do App ###
 
 Utilizei como arquitetura o Mvvm com DataProvider, que se refere a uma arquitetura em que uma requisição Http é solicitada e espelhada em um banco de dados local, para contemplar o funcionamento do App Offline. Crie o App em etapas, começando pela estruturação dos arquivos e pastas, classes de apoio a conexão com API, banco de dados Local, e logo após a criação dos modelos, viewmodels, controllers e views. Utilizei Xib para as views, e para navegação das telas em si, utilizei um pattner Route que por sua vez tem a responsabilidade de aplicação da injeção de dependência. Criei também um campo id para os modelos, com responsabilidade de chave primária no banco de dados local, o mesmo não se encontra no modelo de resultado da API.
 
