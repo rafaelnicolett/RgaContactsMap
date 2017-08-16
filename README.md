@@ -1,6 +1,6 @@
 # README #
 
-Projeto criado para teste de avaliação de Swift e iOS, com respectivo negócio de buscar dados de contatos da API, salvar os mesmos localmente e contemplar a alteração, criação e exclusão do contato.
+Projeto de exemplo com iOS e Swift, com respectivo negócio de buscar dados de contatos da API, salvar os mesmos localmente e contemplar a alteração, criação e exclusão do contato.
 
 ### Bibliotecas utilizadas ###
 
